@@ -54,3 +54,36 @@ function Bullet() {
 //this.x 와 this.y를 사용하여 총알의 개별 좌표를 관리.
 //this.init()을 호출하면 해당 총알 객체만 초기화됨.
 ```
+
+### **2. `canvas` 사용법**
+HTML5의 <canvas> 요소를 사용하여 2D 그래픽을 그립니다.
+이 게임에서는 canvas를 생성한 후 body에 추가합니다.
+
+#### ✅ **`canvas` 생성 코드**
+```js
+let canvas = document.createElement("canvas");
+canvas.width = 400;
+canvas.height = 700;
+document.body.appendChild(canvas);
+//document.createElement("canvas") → 새로운 <canvas> 요소 생성
+//canvas.width / canvas.height → 캔버스 크기 설정
+//document.body.appendChild(canvas) → 캔버스를 HTML 문서에 추가
+```
+
+### **2.`ctx`(CanvasRenderingContext2D) 사용법**
+ctx는 캔버스에 그림을 그리는 도구입니다.
+canvas.getContext("2d")를 호출하여 2D 렌더링 컨텍스트를 가져올 수 있습니다.
+
+#### ✅ **이미지 그리기**
+```js
+ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+ctx.drawImage(spaceshipImage, spaceshipX, spaceshipY);
+//배경및 우주선을 특정 좌표에 그림
+```
+#### ✅ **텍스트 표시(점수 출력)**
+```js
+ctx.fillStyle = "white";
+ctx.font = "20px Arial";
+ctx.fillText(`score: ${score}`, 20, 30);
+//점수를 화면 좌측 상단에 표시
+```
