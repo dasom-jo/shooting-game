@@ -50,3 +50,6 @@ function Bullet() {
         this.y -= 5; // 총알이 위로 이동
     };
 }
+```
+this.x 와 this.y를 사용하여 총알의 개별 좌표를 관리
+this.init()을 호출하면 해당 총알 객체만 초기화됨
