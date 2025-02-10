@@ -87,3 +87,8 @@ ctx.font = "20px Arial";
 ctx.fillText(`score: ${score}`, 20, 30);
 //점수를 화면 좌측 상단에 표시
 ```
+
+### **3.영상**
+![gameplay](https://github.com/user-attachments/assets/ce3be8c7-b554-4692-bf3b-e2e2d7e322a2)
+
+
